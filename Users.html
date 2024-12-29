@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link href="styles1.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+    <h1>
+        Create Users 
+    </h1>
+    <form>
+        <label for="name">Name</label><br>
+        <input class="styles1" type="text" id="name" placeholder="ABC"><br>
+        <label for="username">Username</label><br>
+        <input class="styles1" type="text" id="username" placeholder="ABC-Admin"><br>
+        <label for="emai">Email</label><br>
+        <input class="styles1" type="email" id="email" placeholder="abc@example.com"><br>
+        <label for="Status">Status</label><br>
+        <select class="styles1" name="Dropdown" id="Status">
+            <option>
+                Pending
+            </option>
+            <option>Done</option>
+        </select><br>
+        <label for="notes">Notes</label><br>
+        <textarea class="styles1" name="notes" id="notes" rows="10" cols="30" placeholder="Add notes about this order..."></textarea><br>
+        <label for="image">Upload image</label><br>
+        <input class="image" type="file" id="image"><br>
+        <button class="save">Save Changes</button>
+        <button class="cancel">Cancel</button>
+    </form>
+    </div>
+</body>
+</html>
