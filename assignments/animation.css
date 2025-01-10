@@ -1,0 +1,38 @@
+body{
+    background-color:skyblue;
+     /* display: flex;
+  justify-content: center;
+align-items: center;*/
+
+}
+img{
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+}
+.sun{
+    z-index: -1;
+width: 150px;
+height: 150px;    
+/*border-radius: 50%;
+background-color: rgb(248, 206, 16);
+border: darkorange solid 1px;*/
+position: absolute;
+right: 200px;
+animation-name: sunrise;
+animation-duration: 10s;
+animation-delay: 0s;
+animation-iteration-count: infinite;
+/*box-shadow: 1px 1px 1px 1px black ;*/
+}
+@keyframes sunrise{
+    0%{
+        bottom: 50px;
+    }
+    50%{
+        bottom: 50%;
+    }
+    100%{
+        bottom: 100vh;
+    }
+}
