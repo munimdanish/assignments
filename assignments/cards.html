@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            background-color: #f8f8f8;
+        }
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .product {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .product:hover {
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        .product img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .product h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .product p {
+            color: #555;
+            font-size: 14px;
+        }
+        .price {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .shop-btn {
+            display: inline-block;
+            background: green;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        @media (min-width: 600px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 900px) {
+            .container {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <img src="https://media.istockphoto.com/id/1470498904/vector/blank-insulated-water-bottle-isolated-on-white-background-realistic-vector-mockup-stainless.jpg?s=612x612&w=0&k=20&c=diBqN8oYcUcFp4ZDK0FbVQlNOxFtHE0LovKuC_7DnS8=" alt="Product 1">
+            <h3>Stainless Steel Bottle</h3>
+            <p>Durable and insulated for all-day freshness.</p>
+            <div class="price">$25.99</div>
+            <a href="#" class="shop-btn">Shop Now</a>
+        </div>
+        <div class="product">
+            <img src="https://i.pinimg.com/474x/de/18/72/de18721cd220523927df378d0ab59f6f.jpg" alt="Product 2">
+            <h3>Plastic Water Bottle</h3>
+            <p>Lightweight and reusable for daily hydration.</p>
+            <div class="price">$10.99</div>
+            <a href="#" class="shop-btn">Shop Now</a>
+        </div>
+        <div class="product">
+            <img src="https://i.pinimg.com/474x/bf/e5/0c/bfe50c1012d793fac568ad47147e6c1c.jpg" alt="Product 3">
+            <h3>Glass Water Bottle</h3>
+            <p>Eco-friendly and stylish for pure water taste.</p>
+            <div class="price">$18.99</div>
+            <a href="#" class="shop-btn">Shop Now</a>
+        </div>
+        <div class="product">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2023/9/341912546/LB/KE/NW/196891981/photo-1602143407151-7111542de6e8-500x500.jpg" alt="Product 4">
+            <h3>Large Water Jug</h3>
+            <p>Perfect for home or office water storage.</p>
+            <div class="price">$35.99</div>
+            <a href="#" class="shop-btn">Shop Now</a>
+        </div>
+    </div>
+</body>
+</html>
