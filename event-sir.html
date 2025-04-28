@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="text" id="name"/>
+    <button id="submitName">Submit</button>
+
+    <h1>
+        Name:
+    </h1>
+    <h2 id="nameOutput"></h2>
+    <p id="nameOutput2"></p>
+
+    <script src="event.js">
+        const nameElement = document.getElementById("name");
+const submitButtonElement = document.getElementById("submitName");
+const nameOutputElement = document.getElementById("nameOutput");
+const nameOutput2Element = document.getElementById("nameOutput2");
+
+const submitButtonEvent = () => {
+    nameOutput2Element.textContent = nameElement.value;
+    nameOutputElement.textContent = nameElement.value;
+}
+const onInputEvent = () => {
+    console.log('onInputEvent called with value', nameElement.value);
+    nameOutput2Element.textContent = nameElement.value;
+}
+submitButtonElement.addEventListener('click', submitButtonEvent);
+nameElement.addEventListener('input', onInputEvent);
+    </script>
+</body>
+</html>
